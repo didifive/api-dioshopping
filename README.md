@@ -62,7 +62,7 @@ Para testar localmente os Endpoints, foi adicionado ao projeto uma coleção do 
 
 ---
 
-#### Deploied in Heroku
+#### Deployed in Heroku
 
 Projeto online pelo [Heroku]: [api-dioshopping-didi.herokuapp.com/](https://api-dioshopping-didi.herokuapp.com/)
 
