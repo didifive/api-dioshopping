@@ -7,9 +7,12 @@ class CreateMessageController{
 
         const createMessageService = new CreateMessageService();
 
-        const newMessage = await createMessageService.execute({ name, email, message});
+        const responseMessage = await createMessageService.execute({ name, email, message});
 
-        return response.status(201).json(newMessage)
+        const statusCode = (responseMessage) ? 201 : 403;
+
+        return response.status(statusCode).json(responseMessage);
+        
     }
 }
 

@@ -34,7 +34,11 @@ Abaixo seguem modificações feitas em relação ao projeto base:
 
 * Foi alterado o banco de dados para PostgreSQL, o banco está hospedado em [ElephantSQL] com plano free;
 * As informações de conexão foram colocadas em variáveis de ambiente no arquivo `.env`;
-* Criadas mensagens para `.then()` e `.catch()` no `createConnection()` do arquivo `database/index.ts`.
+* Criadas mensagens para `.then()` e `.catch()` no `createConnection()` do arquivo `database/index.ts`;
+* Além do email e mensagem que já existiam, foi adicionado campo para "nome" na entidade `Message`;
+* Incluído na resposta da API o _status code_ para informar se a requisição ocorreu normalmente (status 200) ou se foi gravado novo registro (status 201);
+* Criada condicional para checar se email já foi utilizado que retornará o _HTTP status code 403 - Forbidden_ caso realmente já foi usado;
+* Criado endpoint para deletar mensagem, assim o cliente (frontend) pode apagar mensagens indevidas.
 
 _Observações para rodar o projeto baixado:_
 
@@ -49,8 +53,15 @@ _Observações para rodar o projeto baixado:_
 * Confirmar se servidor está rodando: `GET` `/`
 * Listar todas as mensagens: `GET` `/message`
 * Criar/salvar nova mensagem: `POST` `/message`
+* Deletar mensagem: `DELETE` `/message/delete/{id}`
 
 Para testar localmente os Endpoints, foi adicionado ao projeto uma coleção do Postman que já possuí modelos e testes de requisições HTTP. O arquivo está na pasta [postman](https://github.com/didifive/api-dioshopping/tree/master/postman)
+
+---
+
+#### Deploy in Heroku
+
+Projeto da API hospedado no [Heroku]: [api-dioshopping-didi.herokuapp.com/](https://api-dioshopping-didi.herokuapp.com/)
 
 ---
 
@@ -59,13 +70,6 @@ Para testar localmente os Endpoints, foi adicionado ao projeto uma coleção do 
 * Repositório: [didifive/dioshopping]
 
 ---
-
-#### Online
-
-Projeto da API hospedado no [Heroku]: [api-dioshopping-didi.herokuapp.com/](https://api-dioshopping-didi.herokuapp.com/)
-
----
-
 #### Links Interessantes
 
 * [Netlify]
@@ -74,6 +78,9 @@ Projeto da API hospedado no [Heroku]: [api-dioshopping-didi.herokuapp.com/](http
 * [JavaScript]
 * [TypeScript]
 * [ElephantSQL]
+* [TypeORM]
+* [TypeORM Repository API]
+* [HTTP Status Code]
 
 [dio.me]: https://dio.me/
 [Nathally Souza]: https://github.com/nathyts/
@@ -86,3 +93,6 @@ Projeto da API hospedado no [Heroku]: [api-dioshopping-didi.herokuapp.com/](http
 [JavaScript]: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction
 [TypeScript]: https://www.typescriptlang.org/
 [ElephantSQL]: https://www.elephantsql.com/
+[TypeORM]: https://typeorm.io/
+[TypeORM Repository API]: https://github.com/typeorm/typeorm/blob/master/docs/repository-api.md#treerepository-api
+[HTTP Status Code]: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status

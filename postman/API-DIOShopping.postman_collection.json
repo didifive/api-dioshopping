@@ -67,6 +67,26 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "DeleteMessage",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/message/delete/02168c7f-6185-458e-bceb-0d720e1aa1ce",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"message",
+								"delete",
+								"02168c7f-6185-458e-bceb-0d720e1aa1ce"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -137,6 +157,28 @@
 							],
 							"path": [
 								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMessage Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api-dioshopping-didi.herokuapp.com/message/delete/02168c7f-6185-458e-bceb-0d720e1aa1ce",
+							"protocol": "https",
+							"host": [
+								"api-dioshopping-didi",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"message",
+								"delete",
+								"02168c7f-6185-458e-bceb-0d720e1aa1ce"
 							]
 						}
 					},
