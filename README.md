@@ -3,6 +3,9 @@
 ## Digital Innovation One
 ### Bootcamp "Inter Frontend Developer"
 
+---
+# API Backend em Node.js com PostgreSQL
+
 Projeto desenvolvido com instruções de [Nathally Souza] na trilha de estudo do Bootcamp "Inter Frontend Developer" da [dio.me].
 
 <p align="center">
