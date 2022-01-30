@@ -1,11 +1,14 @@
 import { Column, Entity, PrimaryColumn, CreateDateColumn } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
-@Entity("messages")
+@Entity("message")
 class Message {
     @PrimaryColumn()
     readonly id: string;
 
+    @Column()
+    name: string;
+    
     @Column()
     email: string;
 

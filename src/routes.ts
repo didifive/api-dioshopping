@@ -11,7 +11,7 @@ router.get('/', (request: Request, response: Response) => {
     return response.json({message: 'Bem vindo a API Dio Shopping'})
 })
 
-router.get('/message', listMessageController.hanle)
+router.get('/message', listMessageController.handle)
 router.post('/message', createMessageController.handle)
 
 export { router }

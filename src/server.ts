@@ -14,5 +14,5 @@ app.use(express.json());
 app.use(router)
 
 app.listen(5000, () => {
-    console.log('Server on port: 5000')
-})
+    console.log(`⚡️ [server]: Server is running.`);
+});

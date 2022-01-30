@@ -13,12 +13,15 @@ export class CreateMessages1626289618299 implements MigrationInterface {
                         isPrimary: true,
                     },
                     {
+                        name: "name",
+                        type: "varchar(60)",
+                    },{
                         name: "email",
-                        type: "varchar",
+                        type: "varchar(60)",
                     },
                     {
                         name: "message",
-                        type: "varchar"
+                        type: "text"
                     },
                     {
                         name: "created_at",
