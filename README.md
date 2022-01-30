@@ -51,7 +51,7 @@ _Observações para rodar o projeto baixado:_
 
 ---
 
-#### Endpoints criados na API
+#### Endpoints da API
 
 * Confirmar se servidor está rodando: `GET` `/`
 * Listar todas as mensagens: `GET` `/message`
@@ -62,15 +62,16 @@ Para testar localmente os Endpoints, foi adicionado ao projeto uma coleção do 
 
 ---
 
-#### Deploy in Heroku
+#### Deploied in Heroku
 
-Projeto da API hospedado no [Heroku]: [api-dioshopping-didi.herokuapp.com/](https://api-dioshopping-didi.herokuapp.com/)
+Projeto online pelo [Heroku]: [api-dioshopping-didi.herokuapp.com/](https://api-dioshopping-didi.herokuapp.com/)
 
 ---
 
 #### Frontend em React para este projeto
 
 * Repositório: [didifive/dioshopping]
+* APP hospedada em: [dioshopping-app.netlify.app](https://dioshopping-app.netlify.app)
 
 ---
 #### Links Interessantes
