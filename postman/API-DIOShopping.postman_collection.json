@@ -69,6 +69,80 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Heroku",
+			"item": [
+				{
+					"name": "ServerRunning",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-dioshopping-didi.herokuapp.com/",
+							"protocol": "https",
+							"host": [
+								"api-dioshopping-didi",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListMessages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-dioshopping-didi.herokuapp.com/message",
+							"protocol": "https",
+							"host": [
+								"api-dioshopping-didi",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewMessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"name\": \"Teste3\",\r\n    \"email\": \"teste3@teste\",\r\n    \"message\": \"Teste3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-dioshopping-didi.herokuapp.com/message",
+							"protocol": "https",
+							"host": [
+								"api-dioshopping-didi",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"message"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
